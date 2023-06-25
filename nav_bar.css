@@ -21,9 +21,6 @@ body{
 .show-links{
     display: block;
 }
-.links>li{
-    margin: 10px 0;
-}
 .links>li>a{
     text-decoration: none;
     color: black;
@@ -45,14 +42,14 @@ body{
     transform: rotate(90deg);
     color: hsl(205, 86%, 17%);;
 }
-@media screen and (min-width:1050px) {
+@media screen and (min-width:1000px) {
     .nav-header{
         box-shadow: 0px 0px 10px 2px grey;
     }
     .links{
         position: absolute;
         top: 0px;
-        left: 30%;
+        left: 25%;
         display: flex;
         list-style-type: none;
         padding: 15px 0;
@@ -89,16 +86,17 @@ body{
     }
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1000px) {
     .nav-center{
         background-color: white;
         box-shadow: 0px 0px 10px 2px grey;
     }
+    .links>li{
+        display: flex;
+        flex-direction: column;
+    }
     .links>li>a{
         padding: 10px 0;
     }
-    .links>li>a:hover{
-        display: block;
-        
-    }
+   
 }
