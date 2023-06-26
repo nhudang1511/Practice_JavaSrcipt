@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: azure;
+    margin-top: 3rem;
+}
+h2{
+    font-family: "Great Vibes", cursive;
+    color: #c59d5f;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.question-form{
+    display: grid;
+    place-items: center;
+}
+.questions{
+    margin: 0 3%;
+    display: grid;
+    place-items: center;
+    width: 90vw;
+}
+article{
+    margin: 15px 0;
+    background-color: white;
+    padding: 25px 20px 0 20px;
+    box-shadow: 0 1px 10px 1px gray;
+    border-radius: 10px;
+    border: transparent;
+    max-width: 600px;
+    
+}
+.question-title{
+    position: relative;
+}
+.question-title>p{
+    letter-spacing: 3px;
+}
+.question-text{
+    visibility: hidden;
+}
+.show-text .question-text{
+    visibility: visible;
+    margin: 20px 0;
+    border-top: rgba(128, 128, 128, 0.5) 1px solid;
+    padding-top: 10px;
+}
+.question-text>p{
+    font-family: "Roboto", sans-serif;;
+    font-size: 13px;
+    color: #617d98;
+}
+.queston-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #c59d5f;
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    cursor: pointer; 
+    transition: all 0.3s linear;
+}
+.queston-btn:hover{
+    transform: rotate(90deg);
+}
+.plus-icon{
+    display: block;
+}
+.minus-icon{
+    display: none;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+.show-text .minus-icon{
+    display: block;
+}
