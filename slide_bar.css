@@ -20,16 +20,18 @@ body{
     transform: rotate(90deg);
     color: hsl(211, 27%, 70%);
 }
-.open-slide{
-    transform: translate(-100%);
-}
 .slide-center{
     position: fixed;
     background-color: white;
     padding: 10px 0;
     height: 100%;
     width: 300px;
-   
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+    
+}
+.open-slide{
+    transform: translate(0);
 }
 .slide-header{
    display: flex;
