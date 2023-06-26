@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+body{
+    background: url(./hero.jpeg) center/ cover no-repeat;
+}
+header{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.banner{
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+.model-btn{
+    border: transparent;
+    background-color: #49a6e9;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+.model-overlay{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background: rgba(73, 166, 233, 0.5);
+    visibility: hidden;
+}
+.open-model{
+    visibility: visible;
+}
+.model-container{
+    background-color: white;
+    width: 500px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.7rem;
+    color: red;
+    cursor: pointer;
+}
+.close-btn:hover{
+    color: rgb(229, 19, 19);
+    transform: scale(1.3);
+}
