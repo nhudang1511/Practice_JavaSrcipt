@@ -57,3 +57,21 @@ header::after{
     left: 0;
     content: "";
 }
+.preload{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all 0.3s linear;
+
+}
+.hide{
+    z-index: -999;
+    visibility: hidden;
+}
