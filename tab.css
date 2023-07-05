@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: hsl(210, 36%, 96%);;
+}
+.section{
+   display: grid;
+   place-items: center;
+   margin: 4rem 50px;
+   row-gap: 50px;
+}
+.section-content{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px; */
+    display: grid;
+    grid-template-rows: 330px 1fr;
+}
+.title{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.title p{
+    color: hsl(210, 22%, 49%);
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+.about{
+    background-color: white;
+    border-radius: 10px;
+}
+.about-btn{
+    display: flex;
+    justify-content: center;
+}
+.about-btn button{
+    padding: 20px;
+    border: none;
+    width: 100%;
+    background-color: #dae2ec;
+}
+.about-btn button:nth-child(1){
+    border-top-left-radius: 10px;
+}
+.about-btn button:nth-child(3){
+    border-top-right-radius: 10px;
+}
+.about-btn button:hover{
+    background-color: white;
+    color: aqua;
+}
+.tab-btn.active{
+    background-color: white;
+}
+.about-content{
+    padding: 30px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-content h4{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.about-content p{
+    color: hsl(210, 22%, 49%);
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+@media screen and (min-width:1000px) {
+    .section-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 30px;
+    }
+    
+}
